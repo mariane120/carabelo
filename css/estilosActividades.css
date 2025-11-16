@@ -1,0 +1,71 @@
+/*-------------------------------------------------------------------*/
+/*Páxina actividades*/
+/*-------------------------------------------------------------------*/
+.actividades h1 {
+  text-align: center;
+}
+
+.actividades-grid {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  width: 100%;
+}
+
+.actividades-grid img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.actividades-grid h4,
+.actividades-grid p {
+  padding: 20px;
+  text-align: center;
+  color: black;
+}
+
+#actividades-grid-1 {
+  background-color: #7db61b;
+}
+#actividades-grid-2 {
+  background-color: #0177bf;
+}
+/*#actividades-grid-3 {}*/
+#actividades-grid-4 {
+  background-color: #feed01;
+}
+#actividades-grid-5 {
+  background-color: #f08a01;
+}
+/*#actividades-grid-6 {} */
+#actividades-grid-7 {
+  background-color: #0177bf;
+}
+/*#actividades-grid-8 {} */
+#actividades-grid-9 {
+  background-color: #feed01;
+}
+/*#actividades-grid-10 {}*/
+#actividades-grid-11 {
+  background-color: #7db61b;
+}
+/*#actividades-grid-12 {}*/
+/*#actividades-grid-13 {}*/
+#actividades-grid-14 {
+  background-color: #e3001b;
+}
+#actividades-grid-15 {
+  background-color: #f08a01;
+}
+#actividades-grid-16 {
+  background-color: #0177bf;
+}
+#actividades-grid-17 {
+  background-color: #e3001b;
+}
+#actividades-grid-18 {
+  background-color: #feed01;
+}

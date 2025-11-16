@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html>
+  <head lang="GAL">
+    <title>Carabelo ||| inicio</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/estilos.css" />
+    <link rel="stylesheet" href="css/estilosHome.css" />
+
+    <!--Tipografías Inter e Just me again de Google fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Just+Me+Again+Down+Here&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <!--Menú. É idéntico a todas pas páxinas por iso está integrado cun include-->
+    <div include-html="header.html"></div>
+
+    <main>
+      <!--Sección de presentación-->
+      <section class="presentacion">
+        <h1 class="titulo1">
+          Carabelo ||| <br />
+          Pequena cesta con asa,<br />
+          feita con varas tecidas.
+        </h1>
+
+        <div class="container contEsq">
+          <img
+            src="img/Merenda_NoChan.jpg"
+            width="1080"
+            alt="Rapaces merendan"
+          />
+          <h2 class="titulo3">
+            Tecemos redes que posibilitan o crecemento persoal e educativo da
+            <em style="color: #0177bf">infancia e mocidade</em>.
+          </h2>
+        </div>
+
+        <div class="container contDer">
+          <h2 class="titulo3">
+            Dende 2013 traballamos con
+            <em style="color: #f08a01">familias</em> en risco de exclusión
+            social residentes no Concello de Lalín.
+          </h2>
+          <img
+            src="img/ApoioEscolar_Carabelo.jpg"
+            width="1080"
+            alt="Aula con rapazada estudando"
+          />
+        </div>
+
+        <div class="cta">
+          <p>Se pensas que te podemos axudar, ponte en contacto con nós.</p>
+          <br />
+          <a class="boton" style="color: #e3001b" href="contacta/contacta.html"
+            >contacta</a
+          >
+        </div>
+      </section>
+
+      <!--Sección Acompañamento, apoio, costura-->
+
+      <nav id="aacMenu">
+        <h3 class="titulo1">
+          <a class="accMenu-acompañamento" href="#acompañamento"
+            >Acompañamento</a
+          >
+        </h3>
+        <h3 class="titulo1">
+          <a class="accMenu-apoio" href="#apoio">Apoio</a>
+        </h3>
+        <h3 class="titulo1">
+          <a class="accMenu-costura" href="#costura">Costura</a>
+        </h3>
+      </nav>
+
+      <!--Os divs non son máis ca un recurso gráfico para xogar cas cores dos bordes das caixas -->
+      <section class="aac">
+        <article id="acompañamento" class="aac-borde">
+          <div class="contedor1">
+            <div class="contedor2">
+              <div class="aac-text">
+                <h4>Acompañamento integral a familias</h4>
+                <p>
+                  Asesoramos na xestión de papeis, trámites burocráticos, acceso
+                  a recursos ou resolución de dúbidas.
+                </p>
+
+                <a
+                  class="boton"
+                  style="color: #0177bf"
+                  href="actividades/actividades.html"
+                  >saber+</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <img
+            src="img/Escadas_Ordenador.jpg"
+            alt="Grupo estuda cun ordenador"
+          />
+        </article>
+
+        <article id="apoio" class="aac-borde">
+          <div class="contedor1">
+            <div class="contedor2">
+              <div class="aac-text">
+                <h4>Apoio escolar</h4>
+                <p>
+                  Impartimos clases particulares para a rapazada, desde infantil
+                  ata bacharelato.
+                </p>
+                <a
+                  class="boton"
+                  style="color: #7db61b"
+                  href="actividades/actividades.html"
+                  >saber+</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="aac-img">
+            <img
+              src="img/Libros_Corredor.jpg"
+              alt="Dous rapaces sosteñen unha pila de libros"
+            />
+          </div>
+        </article>
+
+        <article id="costura" class="aac-borde">
+          <div class="contedor1">
+            <div class="contedor2">
+              <div class="aac-text">
+                <h4>Taller de costura</h4>
+                <p>
+                  Deseñamos e cosemos artigos de tea personalizados cos que
+                  obtemos doazóns que nos serven para financiarnos.
+                </p>
+                <a class="boton" style="color: black" href="taller/taller.html"
+                  >saber+</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="aac-img">
+            <img src="img/taller.jpg" alt="Mulleres adultas cosen nunha sala" />
+          </div>
+        </article>
+      </section>
+
+      <!--Sección Próximas actividades-->
+      <section class="proximasActividades">
+        <div class="proximasActividades-esq">
+          <h3 class="titulo2">
+            Próximas <br />
+            <em style="color: #7db61b">actividades</em>
+          </h3>
+          <br /><br />
+          <p>
+            Engade o noso calendario ao teu Google Calendar (pinchando no
+            símbolo "+" da esquina inferior dereita) e non perdas ningunha
+            actividade de Carabelo.
+          </p>
+        </div>
+
+        <iframe
+          class="proximasActividades-dta"
+          src="https://calendar.google.com/calendar/embed?height=300&wkst=2&ctz=Europe%2FMadrid&showPrint=0&showTitle=0&showTabs=0&showCalendars=0&showTz=0&mode=MONTH&hl=gl&src=YjVhYWExOTUwMmYzMDM1ZWM5NjAwNjc3Zjc5ZjY3NzkzZjVmMmNhNjJjY2FlNDMxNTc2YmU2OTVjYTJiYTE2M0Bncm91cC5jYWxlbmRhci5nb29nbGUuY29t&color=%237986cb"
+          style="border-width: 0"
+          width="800"
+          height="300"
+          frameborder="0"
+          scrolling="no"
+        ></iframe>
+      </section>
+
+      <!--Sección Impacto-->
+      <section class="impacto">
+        <h3 class="titulo2">O noso <em style="color: #e3001b">impacto</em></h3>
+        <p>
+          Aínda que non nos moven os números, senón as persoas e as súas
+          experiencias vitais, <br />
+          día a día esforzámonos para que toda a rapazada da comarca teña as
+          mesmas oportunidades.
+        </p>
+
+        <div id="datos">
+          <div class="peloto vinte"></div>
+          <div class="peloto oitenta"></div>
+          <div class="peloto setenta"></div>
+          <h4>
+            <em style="color: #f08a01">+20</em> <br />
+            persoas voluntarias
+          </h4>
+
+          <h4>
+            <em style="color: #e3001b">+80</em> <br />
+            rapazas e rapaces
+          </h4>
+
+          <h4>
+            <em style="color: #7db61b">+70</em> <br />
+            familias
+          </h4>
+        </div>
+      </section>
+    </main>
+
+    <!--Pé de páxina. É idéntico a todas pas páxinas por iso está integrado cun include--->
+    <div include-html="footer.html"></div>
+
+    <script src="js/include.js"></script>
+    <script src="js/menu-active.js"></script>
+    <script src="js/aac.js"></script>
+  </body>
+</html>

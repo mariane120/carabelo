@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="gal">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Carabelo ||| contacta</title>
+    <link rel="stylesheet" href="css/estilos.css" />
+    <link rel="stylesheet" href="css/estilosColaboraContacta.css" />
+
+    <!--Tipografías Inter e Just me again de Google fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Just+Me+Again+Down+Here&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!--Menú. É idéntico a todas pas páxinas por iso está integrado cun include-->
+    <div include-html="header.html"></div>
+
+    <main class="pax-colabora contacto">
+      <h1>
+        Se tes calquera idea, petición ou pregunta,<em style="color: #0177bf">
+          contacta</em
+        >
+        con nós
+      </h1>
+      <section class="colabora-contedor contacto">
+        <section class="colabora-esq contacto">
+          <p>
+            Rechea o formulario ou escríbenos directamente a:
+            <a href="mailto:asociacioncarabelo@gmail.com" class="correo"
+              >asociacioncarabelo@gmail.com</a
+            ><br /><br />
+            Se o prefires, achégate ao noso espazo.
+            <br /><br />
+
+            Horario: <br />
+            L-V: 16:00 - 20:00 h <br />
+            S: 10:00 - 13:30 h
+            <br /><br />
+            Localización: <br />
+          </p>
+
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2933.9431917161883!2d-8.11011432327796!3d42.662559215935936!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd2fc7372463c68f%3A0xf052e36d3529b37d!2sR%C3%BAa%20Memorias%20Dun%20Neno%20Labrego%2C%2014%2C%202%C2%BA%2C%2036500%20Lal%C3%ADn%2C%20Pontevedra!5e0!3m2!1sen!2ses!4v1762506632636!5m2!1sen!2ses"
+            width="40%"
+            height="300"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </section>
+
+        <form class="formulario-colaboracion contacto">
+          <label for="nome"
+            ><p>Nome*:</p>
+
+            <input
+              type="text"
+              id="nombre"
+              required
+              placeholder="Nome"
+              title="O nome é un campo obrigatorio"
+              autofocus
+              maxlength="20"
+            />
+          </label>
+
+          <label for="tel"
+            ><p>Teléfono:</p>
+
+            <input
+              type="tel"
+              id="tel"
+              placeholder="Teléfono"
+              pattern="^[0-9]{9}$"
+            />
+            <!--Indicar ao menos un modo de contacto-->
+          </label>
+
+          <label for="email"
+            ><p>Email:</p>
+            <input
+              type="email"
+              id="email"
+              name="user_mail"
+              placeholder="Correo electrónico"
+            />
+            <!--Indicar ao menos un modo de contacto-->
+          </label>
+
+          <label for="mensaxe"
+            ><p>Mensaxe*:</p>
+
+            <input
+              type="textarea"
+              id="mensaxe"
+              required
+              placeholder="Escribe aquí a túa mensaxe"
+            />
+          </label>
+
+          <br />
+
+          <button
+            class="boton"
+            type="submit"
+            id="enviar"
+            style="color: #e3001b"
+          >
+            Enviar
+          </button>
+        </form>
+      </section>
+    </main>
+
+    <!--Pé de páxina. É idéntico a todas pas páxinas por iso está integrado cun include--->
+    <div include-html="footer.html"></div>
+
+    <script src="js/include.js"></script>
+    <script src="js/menu-active.js"></script>
+  </body>
+</html>

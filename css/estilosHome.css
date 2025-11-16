@@ -1,0 +1,346 @@
+/*Estilos páxina inicio web Carabelo: index.html*/
+/*--------------------------------------------------------------------------------------------*/
+
+/*Sección 1: Presentación*/
+h1 {
+  text-align: center;
+}
+
+.container {
+  padding-top: 100px;
+  display: flex;
+  flex-direction: row;
+}
+
+.container.contEsq img,
+.container.contDer img {
+  width: 60%;
+}
+
+.container.contEsq .titulo3,
+.container.contDer .titulo3 {
+  width: 40%;
+  line-height: 42px;
+}
+
+.container.contEsq .titulo3 {
+  padding-left: 50px;
+}
+
+.container.contDer .titulo3 {
+  padding-right: 50px;
+}
+
+.cta {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  text-align: center;
+}
+
+/*Sección 2: Apoio, Acompañamento, Costura*/
+#aacMenu {
+  padding-top: 50px;
+  line-height: 4em;
+  padding-bottom: 30px;
+}
+
+#aacMenu a {
+  text-decoration: none;
+  color: black;
+}
+
+#aacMenu a:hover,
+#aacMenu a:active,
+#aacMenu a.activo {
+  font-weight: bold;
+}
+
+#aacMenu .titulo1:nth-of-type(even) {
+  /*Pseudoelemento. Desplaza as liñas par do menú 40px á dereita*/
+  padding-left: 40px;
+}
+
+#aacMenu .titulo1:last-of-type {
+  /*Pseudoelemento. Desplaza a última liña*/
+  padding-left: 80px;
+}
+
+.aac {
+  padding-bottom: 50px;
+}
+
+#acompañamento,
+#apoio,
+#costura {
+  display: flex;
+  flex-direction: row;
+  padding-bottom: 100px;
+}
+
+#apoio {
+  display: none;
+}
+
+#costura {
+  display: none;
+}
+
+/*Estilos comúns de todos os articles*/
+.contedor1 {
+  height: 500px;
+  width: 500px;
+}
+
+.contedor2 {
+  height: 500px;
+  width: 450px;
+}
+
+.aac-text {
+  height: 500px;
+  width: 400px;
+  margin-right: 10px;
+  padding-right: 50px;
+  padding-left: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.aac-text p,
+.aac-text h4 {
+  padding-bottom: 20px;
+}
+
+.aac img {
+  height: 500px;
+  object-fit: cover;
+}
+
+/*Posición inicial: Acompañamento*/
+#acompañamento .contedor1 {
+  border-left: solid 30px #0177bf;
+}
+
+#acompañamento .contedor2 {
+  border-right: solid 30px #feed01;
+  margin-right: 10px;
+}
+
+#acompañamento .aac-text {
+  border-right: solid 30px #7db61b;
+}
+
+/*Posición: Apoio*/
+#apoio .contedor1 {
+  border-left: solid 30px #0177bf;
+}
+
+#apoio .contedor2 {
+  border-right: solid 30px #feed01;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+#apoio .aac-text {
+  border-left: solid 30px #7db61b;
+}
+
+/*Posición: Costura*/
+#costura .contedor1 {
+  border-left: solid 30px #0177bf;
+}
+
+#costura .contedor2 {
+  border-left: solid 30px #7db61b;
+  margin-left: 10px;
+}
+
+#costura .aac-text {
+  border-left: solid 30px #feed01;
+  margin-left: 10px;
+}
+
+/*Sección 3: Próximas actividades*/
+/*----------------------------------------------------------*/
+.proximasActividades {
+  display: flex;
+  flex-direction: row;
+  padding-bottom: 100px;
+}
+
+.proximasActividades h2 {
+  line-height: 45px;
+}
+
+.proximasActividades em {
+  border-bottom: solid 3px #7db61b;
+  padding-right: 100px;
+}
+
+.proximasActividades p {
+  padding-right: 75px;
+}
+
+.proximasActividades-esq {
+  width: 40%;
+}
+
+.proximasActividades-dta {
+  width: 60%;
+}
+
+/*Sección 4: Impacto*/
+/*----------------------------------------------------------*/
+.impacto {
+  text-align: center;
+  padding-bottom: 50px;
+}
+
+.impacto h2 {
+  line-height: 2.5em;
+}
+
+#datos {
+  padding-top: 50px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto auto;
+  justify-items: center;
+  align-items: center;
+  row-gap: 20px;
+  height: 400px;
+}
+
+.peloto {
+  border-radius: 50%;
+}
+
+.peloto.vinte {
+  width: 45px;
+  height: 45px;
+  background-color: #f08a01;
+  transition: width 0.3s ease, height 0.3s ease;
+}
+
+.peloto.vinte:hover {
+  width: 65px;
+  height: 65px;
+  transition: width 0.3s ease, height 0.3s ease;
+}
+
+.peloto.oitenta {
+  width: 160px;
+  height: 160px;
+  background-color: #e3001b;
+  transition: width 0.3s ease, height 0.3s ease;
+}
+.peloto.oitenta:hover {
+  width: 200px;
+  height: 200px;
+  transition: width 0.3s ease, height 0.3s ease;
+}
+
+.peloto.setenta {
+  width: 135px;
+  height: 135px;
+  background-color: #7db61b;
+  transition: width 0.3s ease, height 0.3s ease;
+}
+
+.peloto.setenta:hover {
+  width: 165px;
+  height: 165px;
+
+  transition: width 0.3s ease, height 0.3s ease;
+}
+
+/*Media Queries- móbil*/
+/*------------------------------------------------------*/
+@media (max-width: 480px) {
+  /*Sección presentación*/
+  .container {
+    padding-top: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .container.contEsq img,
+  .container.contDer img,
+  .container.contEsq .titulo3,
+  .container.contDer .titulo3 {
+    width: 90%;
+  }
+
+  .container.contEsq .titulo3 {
+    padding-left: 0px;
+  }
+
+  /*Sección AAC. Oculto as imaxes */
+  .contedor1 {
+    height: 300px;
+    width: 100%;
+  }
+
+  .contedor2 {
+    height: 300px;
+    width: 100%;
+  }
+
+  .aac-text {
+    height: 300px;
+    width: 100%;
+  }
+
+  .aac img {
+    display: none;
+  }
+
+  /*Posición inicial: Acompañamento*/
+  #acompañamento .contedor2 {
+    margin-right: 0px;
+  }
+  /*Posición: Apoio*/
+  #apoio .contedor2 {
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+
+  /*Posición: Costura*/
+  #costura .contedor2 {
+    margin-left: 0px;
+  }
+
+  #costura .aac-text {
+    margin-left: 0px;
+  }
+
+  /*Próximas actividades*/
+  .proximasActividades {
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .proximasActividades p {
+    padding-right: 0px;
+  }
+
+  .proximasActividades-esq,
+  .proximasActividades-dta {
+    width: 90%;
+  }
+
+  /*O noso impacto*/
+  #datos {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .peloto {
+    display: none;
+  }
+}

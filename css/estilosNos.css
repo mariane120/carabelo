@@ -1,0 +1,63 @@
+/*-----------------------------------------------------------------------*/
+/*Páxina nós*/
+/*-----------------------------------------------------------------------*/
+/*Sobre nós*/
+.familia {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.sobre-nos {
+  display: flex;
+  flex-direction: row;
+  width: 66%;
+  gap: 100px;
+}
+
+/*Fitos*/
+.fitos {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  width: 100%;
+}
+.fitos h2 {
+  text-align: center;
+}
+
+#bloque {
+  padding-top: 30px;
+  width: 100%;
+}
+
+.borde-fito {
+  border-top: 3px solid #0177bf;
+  padding: 20px;
+  width: 100%;
+}
+
+.titulo-fito {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.contido-fito {
+  width: 66%;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  display: none;
+}
+
+.titulo-fito .mas {
+  font-size: 50px;
+  font-weight: normal;
+  color: #0177bf;
+  text-align: right;
+}
+
+.titulo-fito:hover {
+  font-weight: bold;
+  cursor: pointer;
+}

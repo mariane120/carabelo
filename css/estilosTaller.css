@@ -1,0 +1,71 @@
+/*---------------------------------------------------------*/
+/*Páxina taller*/
+/*---------------------------------------------------------*/
+/*Cabeceira taller*/
+.taller-cabeceira {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding-bottom: 70px;
+}
+
+.taller-cabeceira p {
+  width: 60%;
+}
+
+.taller-cabeceira h1 {
+  width: 40%;
+  text-align: left;
+  line-height: 0.7;
+}
+
+/*Artigos taller. Grid 3+2*/
+.taller-artigos {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  width: 100%;
+  height: 100vh; /*Ocupa toda a altura visible da pantalla*/
+  gap: 15px;
+  padding-bottom: 50px;
+}
+
+.taller-artigos > div {
+  position: relative;
+}
+
+.taller-artigos img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  position: absolute;
+  top: 25%;
+}
+
+.taller-artigos h4 {
+  padding: 20px;
+}
+
+.neceser {
+  background-color: #e3001b;
+}
+
+.chaveiro {
+  background-color: #f08a01;
+}
+
+.boneco {
+  background-color: #0177bf;
+}
+
+.fardela {
+  background-color: #feed01;
+}
+
+.escaparate {
+  background-color: #7db61b;
+}
+.regalo {
+  background-color: #e3001b;
+}

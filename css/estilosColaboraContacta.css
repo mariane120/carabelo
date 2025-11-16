@@ -1,0 +1,115 @@
+/*-------------------------------------------------------------------*/
+/*Páxina colabora*/
+/*-------------------------------------------------------------------*/
+
+/*Estilos xenéricos formulario*/
+.colabora-contedor {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.colabora-esq {
+  width: 40%;
+  padding-right: 100px;
+}
+
+.formulario-colaboracion {
+  width: 60%;
+}
+
+.formulario-colaboracion label p {
+  font-size: 30px;
+}
+
+.formulario-colaboracion label {
+  display: block;
+  padding-bottom: 30px;
+}
+
+.formulario-colaboracion input {
+  /* Para asegurarse de que todos os campos de texto teñen a mesma configuración de letra*/
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  padding-left: 5px;
+  width: 100%;
+  height: 3em;
+  box-sizing: border-box;
+  border: 0;
+  outline: none; /*Para eliminar a caixiña cando queremos escribir nalgún campo*/
+}
+
+.formulario-colaboracion input::placeholder,
+.formulario-colaboracion #mensaxe::placeholder {
+  font-family: "Inter", sans-serif;
+}
+
+/*Estilos formulario colabora*/
+.pax-colabora h1 {
+  width: 40%;
+  line-height: 54px;
+  padding-right: 50px;
+}
+
+.formulario-colaboracion.colabora input {
+  /* Para asegurarse de que todos os campos de texto teñen a mesma configuración de letra*/
+  border-bottom: solid 3px #7db61b;
+  border-left: solid 3px #7db61b;
+}
+
+.formulario-colaboracion.colabora input:hover,
+.formulario-colaboracion.colabora input:active {
+  border-bottom: solid 5px #7db61b;
+  border-left: solid 5px #7db61b;
+}
+
+.formulario-colaboracion input[type="checkbox"] {
+  accent-color: #feed01;
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+
+.formulario-colaboracion #tipo-colaboracion {
+  display: grid;
+  grid-template-columns: 40px 1fr;
+  gap: 8px;
+}
+
+.formulario-colaboracion #tipo-colaboracion p {
+  font-size: 18px;
+  color: #4d4a4a;
+}
+
+/*-------------------------------------------------------------------*/
+/*Páxina contacta*/
+/*-------------------------------------------------------------------*/
+.pax-colabora.contacto h1 {
+  width: 40%;
+  line-height: 54px;
+  padding-right: 50px;
+}
+
+.pax-colabora.contacto a {
+  color: #7db61b;
+  outline: none;
+  text-decoration: none;
+}
+
+.pax-colabora.contacto a:hover {
+  border-bottom: solid 1px #7db61b;
+}
+
+.formulario-colaboracion.contacto input {
+  border-bottom: solid 3px #f08a01;
+  border-left: solid 3px #f08a01;
+}
+
+.formulario-colaboracion.contacto input:hover,
+.formulario-colaboracion.contacto input:active {
+  border-bottom: solid 5px #f08a01;
+  border-left: solid 5px #f08a01;
+}

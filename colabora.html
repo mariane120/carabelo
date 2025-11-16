@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="gal">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Carabelo ||| colabora</title>
+    <link rel="stylesheet" href="css/estilos.css" />
+    <link rel="stylesheet" href="css/estilosColaboraContacta.css" />
+
+    <!--Tipografías Inter e Just me again de Google fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Just+Me+Again+Down+Here&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!--Menú. É idéntico a todas pas páxinas por iso está integrado cun include-->
+    <div include-html="header.html"></div>
+
+    <main class="pax-colabora">
+      <h1>
+        Cando <em style="color: #f08a01">colaboras</em> con nós axúdasnos a
+        soster o noso labor
+      </h1>
+      <section class="colabora-contedor">
+        <section class="colabora-esq">
+          <p>
+            O voluntariado é a vara principal que sostén a nosa labor. Máis de
+            20 persoas voluntarias adicamos o noso tempo libre a este proxecto.
+            Só faltas ti!
+            <br /><br />
+            As doazóns económicas ou de materiais, tanto de particulares como de
+            empresas, permítennos afrontar gastos e ter maior incidencia social.
+            <br /><br />
+            Se queres unirte ao noso equipo, rechea o formulario. Poñerémonos en
+            contacto contigo o antes posible.
+          </p>
+        </section>
+
+        <form class="formulario-colaboracion colabora">
+          <label for="nome"
+            ><p>Nome*:</p>
+
+            <input
+              type="text"
+              id="nombre"
+              required
+              placeholder="Nome"
+              title="O nome é un campo obrigatorio"
+              autofocus
+              maxlength="20"
+            />
+          </label>
+
+          <label for="tel"
+            ><p>Teléfono:</p>
+
+            <input
+              type="tel"
+              id="tel"
+              placeholder="Teléfono"
+              pattern="^[0-9]{9}$"
+            />
+            <!--Indicar ao menos un modo de contacto-->
+          </label>
+
+          <label for="email"
+            ><p>Email:</p>
+            <input
+              type="email"
+              id="email"
+              name="user_mail"
+              placeholder="Correo electrónico"
+            />
+            <!--Indicar ao menos un modo de contacto-->
+          </label>
+
+          <p style="font-size: 30px">Como che gustaría colaborar?</p>
+          <br />
+          <label for="tipo" id="tipo-colaboracion">
+            <input
+              type="checkbox"
+              name="tipo-colaboracion"
+              value="Clases particulares"
+            />
+            <p>Clases particulares</p>
+            <input
+              type="checkbox"
+              name="tipo-colaboracion"
+              value="Dinamización de actividades"
+            />
+            <p>Dinamización de actividades</p>
+            <input
+              type="checkbox"
+              name="tipo-colaboracion"
+              value="Colaboración no taller de costura"
+            />
+            <p>Colaboración no taller de costura</p>
+            <input
+              type="checkbox"
+              name="tipo-colaboracion"
+              value="Doazón económica"
+            />
+            <p>Doazón económica</p>
+            <input
+              type="checkbox"
+              name="tipo-colaboracion"
+              value="Doazón de materiais"
+            />
+            <p>Doazón de materiais</p>
+            <input type="checkbox" name="tipo-colaboracion" value="Outras" />
+            <p>Outras</p>
+          </label>
+
+          <label for="mensaxe"
+            ><p>Mensaxe*:</p>
+
+            <input
+              type="textarea"
+              id="mensaxe"
+              required
+              placeholder="Escribe aquí a túa mensaxe"
+            />
+          </label>
+
+          <br />
+
+          <button
+            class="boton"
+            type="submit"
+            id="enviar"
+            style="color: #0177bf"
+          >
+            Enviar
+          </button>
+        </form>
+      </section>
+    </main>
+
+    <!--Pé de páxina. É idéntico a todas pas páxinas por iso está integrado cun include--->
+    <div include-html="footer.html"></div>
+
+    <script src="js/include.js"></script>
+    <script src="js/menu-active.js"></script>
+  </body>
+</html>

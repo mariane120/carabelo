@@ -1,0 +1,251 @@
+/*Estilos xerais a toda a web web Carabelo*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+/*Estilos texto*/
+.inter {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+.just-me-again-down-here-regular {
+  font-family: "Just Me Again Down Here", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+}
+
+.titulo1 {
+  font-size: 48px;
+  font-weight: normal;
+}
+.titulo2 {
+  font-size: 40px;
+  font-weight: bold;
+}
+.titulo3 {
+  font-size: 32px;
+  font-weight: normal;
+}
+h4 {
+  font-size: 24px;
+  font-weight: normal;
+}
+p {
+  font-size: 18px;
+  color: #4d4a4a;
+}
+
+em {
+  font-family: "Just Me Again Down Here", cursive;
+  font-size: larger;
+}
+
+/*Estilos botóns*/
+.boton {
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: bolder;
+  padding-bottom: 3px;
+  border-bottom: solid 5px;
+  border-top: 0px;
+  border-left: 0px;
+  border-right: 0px;
+  background-color: white;
+  width: auto;
+  transition: border-width 0.3s ease, font-weight 0.3s ease;
+}
+
+.boton:hover {
+  border-bottom: solid 1px;
+  font-weight: lighter;
+}
+
+/*Estilos menú*/
+.menuHamburguesa {
+  display: none;
+}
+
+.contidoHamburguesa {
+  display: none;
+}
+
+.menu,
+.menuHamburguesa {
+  position: fixed;
+  top: 0;
+  z-index: 999;
+  height: 250px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  background-color: white;
+}
+
+.menu-container {
+  height: 200px;
+  display: flex;
+  justify-content: space-between; /*Reparte o espazo entre o bloque esq, centro e dto*/
+  align-items: flex-end;
+  max-width: 1440px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.menu-container ul {
+  list-style-type: none;
+  width: 33%;
+}
+
+.menu-container li {
+  max-width: 130px;
+  position: relative; /*Cada li serve de referencia para o puntiño*/
+  text-align: center;
+}
+
+.menu-esq {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.menu-centro {
+  text-align: center;
+  max-width: 130px;
+}
+
+.menu-dto {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.menu-centro img {
+  object-fit: cover;
+}
+
+/*Estilos botóns do menú*/
+.menu-container a {
+  display: inline-block; /*Asegura que o ancho da ligazón sexa só o do texto*/
+  text-decoration: none;
+  color: black;
+  transition: color 0.2s ease;
+}
+
+.menu-container a::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: -20px;
+  transform: translateX(-50%);
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: black;
+  opacity: 0;
+  transition: opacity 0.2s ease;
+}
+
+.menu-container a:hover::after,
+.menu-container a.activo::after {
+  opacity: 1;
+}
+
+main {
+  margin-top: 350px; /* axusta a altura para que apareza o contido a continuación do menú */
+  max-width: 1440px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+img.xeral {
+  object-fit: cover;
+  padding-right: 30px;
+}
+
+/*footer*/
+/*----------------------------------------------------------*/
+footer {
+  background-color: black;
+  padding-top: 50px;
+  height: 350px;
+}
+
+footer p {
+  color: white;
+  font-size: 14px;
+}
+
+.peCarabelo {
+  max-width: 1440px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-bottom: 50px;
+}
+
+.pe::not(:last-child) {
+  padding-right: 100px;
+}
+
+.pe.rrss {
+  text-align: right;
+}
+
+.pe.rrss img {
+  width: 35px;
+  height: 35px;
+  margin-right: 40px;
+}
+
+.sinatura {
+  max-width: 1440px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.sinatura a {
+  text-decoration: none;
+  color: white;
+  padding-bottom: 50px;
+}
+
+/*Media Queries- móbil*/
+/*------------------------------------------------------*/
+@media (max-width: 480px) {
+  .menu {
+    display: none;
+  }
+
+  .menuHamburguesa {
+    height: 200px;
+    width: 100%;
+    display: flex !important;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .menuHamburguesa img {
+    object-fit: cover;
+  }
+
+  footer {
+    height: 580px;
+  }
+
+  .peCarabelo {
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .pe.rrss {
+    text-align: left;
+  }
+}

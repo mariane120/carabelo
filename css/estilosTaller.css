@@ -20,27 +20,29 @@
   line-height: 0.7;
 }
 
-/*Artigos taller. Grid 3+2*/
+/*Artigos taller. Grid 4x2*/
 .taller-artigos {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(2, 1fr);
   width: 100%;
-  height: 100vh; /*Ocupa toda a altura visible da pantalla*/
   gap: 15px;
-  padding-bottom: 50px;
+  margin-bottom: 50px;
 }
 
 .taller-artigos > div {
-  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start; /* Centra verticalmente o contido */
+  align-items: center; /* Centra horizontalmente */
+  height: 500px;
 }
 
 .taller-artigos img {
   width: 100%;
+  margin-top: 16%;
   height: 250px;
   object-fit: cover;
-  position: absolute;
-  top: 25%;
 }
 
 .taller-artigos h4 {
@@ -68,4 +70,31 @@
 }
 .regalo {
   background-color: #e3001b;
+}
+
+/*Media queries*/
+/*--------------------------*/
+@media (max-width: 768px) {
+  .taller-cabeceira p {
+    width: 100%;
+  }
+
+  .taller-artigos {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 2fr);
+  }
+}
+
+@media (max-width: 480px) {
+  .taller-cabeceira {
+    flex-direction: column;
+    gap: 30px;
+    width: 90%;
+    margin-left: 5%;
+  }
+
+  .taller-artigos {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+  }
 }

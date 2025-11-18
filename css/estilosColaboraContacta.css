@@ -50,7 +50,6 @@
 /*Estilos formulario colabora*/
 .pax-colabora h1 {
   width: 40%;
-  line-height: 54px;
   padding-right: 50px;
 }
 
@@ -89,7 +88,6 @@
 /*-------------------------------------------------------------------*/
 .pax-colabora.contacto h1 {
   width: 40%;
-  line-height: 54px;
   padding-right: 50px;
 }
 
@@ -112,4 +110,30 @@
 .formulario-colaboracion.contacto input:active {
   border-bottom: solid 5px #f08a01;
   border-left: solid 5px #f08a01;
+}
+
+/*Media queries*/
+/*--------------------------*/
+@media (max-width: 768px) {
+  .pax-colabora,
+  .pax-colabora.contacto {
+    width: 90%;
+    margin-left: 5%;
+  }
+
+  .pax-colabora h1,
+  .pax-colabora.contacto h1,
+  .colabora-esq {
+    width: 100%;
+    padding-right: 0;
+  }
+
+  .colabora-contedor {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .formulario-colaboracion {
+    width: 100%;
+  }
 }

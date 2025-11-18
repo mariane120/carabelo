@@ -69,3 +69,20 @@
 #actividades-grid-18 {
   background-color: #feed01;
 }
+
+/*Media queries*/
+/*--------------------------*/
+
+@media (max-width: 992px) {
+  .actividades-grid {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+  }
+
+  @media (max-width: 480px) {
+    .actividades-grid {
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(9, 1fr);
+    }
+  }
+}

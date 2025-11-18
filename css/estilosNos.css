@@ -14,6 +14,10 @@
   gap: 100px;
 }
 
+.sobre-nos p {
+  flex: 33%;
+}
+
 /*Fitos*/
 .fitos {
   padding-top: 50px;
@@ -60,4 +64,19 @@
 .titulo-fito:hover {
   font-weight: bold;
   cursor: pointer;
+}
+
+/*Media queries*/
+/*--------------------------*/
+@media (max-width: 480px) {
+  .familia {
+    width: 90%;
+    margin-left: 5%;
+  }
+
+  .sobre-nos {
+    flex-direction: column;
+    width: 100%;
+    gap: 30px;
+  }
 }

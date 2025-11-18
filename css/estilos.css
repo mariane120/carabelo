@@ -1,9 +1,14 @@
-/*Estilos xerais a toda a web web Carabelo*/
+/*Estilos xerais a toda a web Carabelo*/
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  width: 100%;
+}
+
+main,
+header,
+footer {
+  margin: 0 auto;
 }
 
 /*Estilos texto*/
@@ -24,24 +29,31 @@ body {
 }
 
 .titulo1 {
-  font-size: 48px;
+  font-size: clamp(28px, 6vw, 48px); /*Tamaños fluidos*/
   font-weight: normal;
+  line-height: 1.3;
 }
 .titulo2 {
-  font-size: 40px;
+  font-size: clamp(24px, 5vw, 40px);
   font-weight: bold;
+  line-height: 1.3;
 }
 .titulo3 {
-  font-size: 32px;
+  font-size: clamp(20px, 4vw, 32px);
   font-weight: normal;
+  line-height: 1.3;
 }
+
 h4 {
-  font-size: 24px;
+  font-size: clamp(18px, 3.5vw, 24px);
   font-weight: normal;
+  line-height: 1.3;
 }
+
 p {
-  font-size: 18px;
+  font-size: clamp(16px, 3vw, 18px);
   color: #4d4a4a;
+  line-height: 1.3;
 }
 
 em {
@@ -70,16 +82,12 @@ em {
 }
 
 /*Estilos menú*/
-.menuHamburguesa {
-  display: none;
-}
 
-.contidoHamburguesa {
-  display: none;
-}
-
+/*Menú*/
+/*--------------------------------*/
 .menu,
 .menuHamburguesa {
+  width: 100%;
   position: fixed;
   top: 0;
   z-index: 999;
@@ -89,24 +97,21 @@ em {
 }
 
 .menu-container {
+  width: 90%; /*Un pouco máis estreito que o ancho de pantalla*/
+  margin-left: 5%; /*Centrado*/
   height: 200px;
   display: flex;
   justify-content: space-between; /*Reparte o espazo entre o bloque esq, centro e dto*/
   align-items: flex-end;
-  max-width: 1440px;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 .menu-container ul {
   list-style-type: none;
-  width: 33%;
 }
 
 .menu-container li {
-  max-width: 130px;
   position: relative; /*Cada li serve de referencia para o puntiño*/
-  text-align: center;
+  padding: 0 20px 0 20px;
 }
 
 .menu-esq {
@@ -115,17 +120,13 @@ em {
 }
 
 .menu-centro {
+  display: flex;
   text-align: center;
-  max-width: 130px;
 }
 
 .menu-dto {
   display: flex;
   justify-content: flex-end;
-}
-
-.menu-centro img {
-  object-fit: cover;
 }
 
 /*Estilos botóns do menú*/
@@ -155,16 +156,45 @@ em {
   opacity: 1;
 }
 
+/*Menú hamburguesa*/
+/*--------------------------------*/
+.menuHamburguesa {
+  display: none;
+}
+
+.contidoHamburguesa {
+  width: 90%;
+  margin: 0 10%;
+}
+
+.contidoHamburguesa ul {
+  list-style-type: none;
+}
+
+.contidoHamburguesa li {
+  padding-bottom: 1em;
+}
+
+.contidoHamburguesa a {
+  text-decoration: none;
+  color: black;
+  transition: color 0.2s ease;
+}
+
+.contidoHamburguesa a:hover {
+  border-bottom: solid 1px black;
+}
+
+/*-----------------------------*/
+
 main {
   margin-top: 350px; /* axusta a altura para que apareza o contido a continuación do menú */
   max-width: 1440px;
-  margin-left: auto;
-  margin-right: auto;
 }
 
-img.xeral {
-  object-fit: cover;
-  padding-right: 30px;
+img {
+  max-width: 100%;
+  height: auto;
 }
 
 /*footer*/
@@ -172,80 +202,102 @@ img.xeral {
 footer {
   background-color: black;
   padding-top: 50px;
-  height: 350px;
+  height: auto;
 }
 
 footer p {
   color: white;
-  font-size: 14px;
+  font-size: clamp(12px, 2vw, 14px);
+  line-height: 1.5;
 }
 
 .peCarabelo {
-  max-width: 1440px;
-  margin: 0 auto;
+  width: 90%; /*Un pouco máis estreito que o ancho de pantalla*/
+  margin-left: 5%; /*Centrado*/
   display: flex;
-  flex-direction: row;
   justify-content: space-between;
+  align-items: flex-start;
   padding-bottom: 50px;
+  gap: 80px;
 }
 
-.pe::not(:last-child) {
-  padding-right: 100px;
+.pe {
+  width: 33%;
 }
 
-.pe.rrss {
-  text-align: right;
+#peRRSS {
+  display: flex;
+  gap: 40px;
+  justify-content: flex-end;
+  align-items: flex-start;
 }
 
-.pe.rrss img {
+#peRRSS img {
   width: 35px;
   height: 35px;
-  margin-right: 40px;
 }
 
 .sinatura {
-  max-width: 1440px;
-  margin-left: auto;
-  margin-right: auto;
+  border-top: solid 1px white;
   text-align: center;
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 
 .sinatura a {
   text-decoration: none;
   color: white;
-  padding-bottom: 50px;
 }
 
-/*Media Queries- móbil*/
-/*------------------------------------------------------*/
-@media (max-width: 480px) {
+/*Menú hamburguesa*/
+.contidoHamburguesa {
+  color: black;
+}
+
+/*Media Query- intermedio*/
+@media (max-width: 768px) {
+  /*Menú hamburguesa*/
   .menu {
     display: none;
   }
 
   .menuHamburguesa {
-    height: 200px;
-    width: 100%;
-    display: flex !important;
+    display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+  }
+
+  .menuHamburguesa a {
+    margin: 0 5%;
   }
 
   .menuHamburguesa img {
     object-fit: cover;
   }
 
-  footer {
-    height: 580px;
+  /*Marxe do main*/
+  main {
+    margin-top: 300px;
   }
 
+  /*Footer*/
   .peCarabelo {
     flex-direction: column;
     gap: 40px;
   }
 
-  .pe.rrss {
-    text-align: left;
+  .pe {
+    width: 100%;
+  }
+
+  #peRRSS {
+    justify-content: flex-start;
+  }
+}
+
+@media (max-width: 480px) {
+  main {
+    margin-top: 275px;
   }
 }

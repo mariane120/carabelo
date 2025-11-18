@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="gl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Menú</title>
+
+    <!--Tipografías Inter e Just me again de Google fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Just+Me+Again+Down+Here&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="css/estilos.css" />
+    <link rel="stylesheet" href="css/mediaQueries.css" />
+  </head>
+  <body>
+    <!--Menú. É idéntico a todas pas páxinas por iso está integrado cun include-->
+    <div include-html="header.html"></div>
+    <main>
+      <nav class="contidoHamburguesa">
+        <ul>
+          <li><a href="nos.html">nós</a></li>
+          <li><a href="actividades.html">actividades</a></li>
+          <li><a href="taller.html">taller</a></li>
+          <li><a href="colabora.html">colabora</a></li>
+          <li><a href="contacta.html">contacta</a></li>
+        </ul>
+      </nav>
+    </main>
+
+    <script src="js/include.js"></script>
+  </body>
+</html>

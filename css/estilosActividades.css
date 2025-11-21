@@ -20,7 +20,7 @@
   object-fit: cover;
 }
 
-.actividades-grid h4,
+.actividades-grid .titulo4,
 .actividades-grid p {
   padding: 20px;
   text-align: center;
@@ -68,7 +68,7 @@
   border: solid 3px grey;
 }
 #actividades-grid-17 {
-  background-color: #f08a01;;
+  background-color: #f08a01;
 }
 #actividades-grid-18 {
   background-color: #feed01;

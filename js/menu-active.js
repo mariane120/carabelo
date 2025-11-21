@@ -2,7 +2,7 @@
 // Esperar a que se carguen todos los includes antes de marcar el activo
 window.addEventListener("load", () => {
   const checkMenuReady = setInterval(() => {
-    const links = document.querySelectorAll(".menu-container a");
+    const links = document.querySelectorAll(".cabeceira-container  a");
     if (links.length > 0) {
       clearInterval(checkMenuReady);
       links.forEach(link => {

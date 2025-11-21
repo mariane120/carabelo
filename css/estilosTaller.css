@@ -50,26 +50,27 @@
 }
 
 .neceser {
-  background-color: #e3001b;
-}
-
-.chaveiro {
   background-color: #f08a01;
 }
 
-.boneco {
-  background-color: #0177bf;
-}
-
-.fardela {
+.chaveiro {
   background-color: #feed01;
 }
 
-.escaparate {
+.boneco {
   background-color: #7db61b;
 }
+
+.fardela {
+  background-color: #f08a01;
+}
+
+.escaparate {
+  background-color: #feed01;
+}
+
 .regalo {
-  background-color: #e3001b;
+  background-color: #f08a01;
 }
 
 /*Media queries*/

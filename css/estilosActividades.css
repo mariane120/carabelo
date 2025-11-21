@@ -31,7 +31,8 @@
   background-color: #7db61b;
 }
 #actividades-grid-2 {
-  background-color: #0177bf;
+  background-color: white;
+  border: solid 3px grey;
 }
 /*#actividades-grid-3 {}*/
 #actividades-grid-4 {
@@ -42,7 +43,8 @@
 }
 /*#actividades-grid-6 {} */
 #actividades-grid-7 {
-  background-color: #0177bf;
+  background-color: white;
+  border: solid 3px grey;
 }
 /*#actividades-grid-8 {} */
 #actividades-grid-9 {
@@ -55,16 +57,18 @@
 /*#actividades-grid-12 {}*/
 /*#actividades-grid-13 {}*/
 #actividades-grid-14 {
-  background-color: #e3001b;
+  background-color: white;
+  border: solid 3px grey;
 }
 #actividades-grid-15 {
   background-color: #f08a01;
 }
 #actividades-grid-16 {
-  background-color: #0177bf;
+  background-color: white;
+  border: solid 3px grey;
 }
 #actividades-grid-17 {
-  background-color: #e3001b;
+  background-color: #f08a01;;
 }
 #actividades-grid-18 {
   background-color: #feed01;

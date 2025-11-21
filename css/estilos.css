@@ -96,7 +96,7 @@ em {
   background-color: white;
 }
 
-.menu-container {
+.cabeceira-container {
   width: 90%; /*Un pouco máis estreito que o ancho de pantalla*/
   margin-left: 5%; /*Centrado*/
   height: 200px;
@@ -105,11 +105,11 @@ em {
   align-items: flex-end;
 }
 
-.menu-container ul {
+.cabeceira-container ul {
   list-style-type: none;
 }
 
-.menu-container li {
+.cabeceira-container li {
   position: relative; /*Cada li serve de referencia para o puntiño*/
   padding: 0 20px 0 20px;
 }
@@ -130,14 +130,14 @@ em {
 }
 
 /*Estilos botóns do menú*/
-.menu-container a {
+.cabeceira-container a {
   display: inline-block; /*Asegura que o ancho da ligazón sexa só o do texto*/
   text-decoration: none;
   color: black;
   transition: color 0.2s ease;
 }
 
-.menu-container a::after {
+.cabeceira-container a::after {
   content: "";
   position: absolute;
   left: 50%;
@@ -151,8 +151,8 @@ em {
   transition: opacity 0.2s ease;
 }
 
-.menu-container a:hover::after,
-.menu-container a.activo::after {
+.cabeceira-container a:hover::after,
+.cabeceira-container a.activo::after {
   opacity: 1;
 }
 

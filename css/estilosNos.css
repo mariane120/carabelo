@@ -40,38 +40,17 @@
 }
 
 #search-input {
+  font-family: "Inter", sans-serif;
   flex-grow: 1; /* Ocupa espacio restante */
-  border: none;
+  border: 0;
   padding: 10px 15px;
   outline: none;
+
   font-size: 16px;
 }
 
-.search-button {
-  padding: 10px 15px;
-  border: none;
-  background-color: #007bff;
-  color: white; /* El color del icono será blanco por herencia */
-  cursor: pointer;
-  font-size: 16px;
-  transition: background-color 0.3s;
-  display: flex; /* centrar icono */
-  align-items: center;
-  justify-content: center;
-}
-
-.search-button:hover {
-  background-color: #0177bf;
-}
-
-/* Opcional: Si decides dejar el texto "Buscar" junto al icono, usa esto para espaciarlos */
-.search-button i {
-  /* margin-right: 5px; */ /* Descomenta si usas texto y necesitas espacio */
-}
-
-/* Estilo para el icono (si usas Font Awesome) */
-.fa-search {
-  /* Puedes añadir más estilos aquí */
+#search-input::placeholder {
+  font-family: "Inter", sans-serif;
 }
 
 #bloque {

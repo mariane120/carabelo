@@ -50,6 +50,42 @@
       <!--Fitos-->
       <section class="fitos">
         <h2 class="titulo2">Coñece a nosa <em>historia</em></h2>
+
+        <!--Buscador-->
+        <!DOCTYPE html>
+        <html lang="es">
+          <head>
+            <meta charset="UTF-8" />
+            <meta
+              name="viewport"
+              content="width=device-width, initial-scale=1.0"
+            />
+            <title>Buscador con Icono</title>
+            <!-- 1. Enlaza Font Awesome (usando la versión gratuita CDN) -->
+            <link rel="stylesheet" href="cdnjs.cloudflare.com" />
+            <link rel="stylesheet" href="style.css" />
+          </head>
+          <body>
+            <div class="search-container">
+              <form action="/search" method="get">
+                <input
+                  type="search"
+                  name="q"
+                  placeholder="Buscar..."
+                  class="search-input"
+                />
+                <button type="submit" class="search-button">
+                  <!-- 2. Añade el icono de lupa (fas fa-search) -->
+                  <i class="fas fa-search"></i>
+                  <!-- Opcional: Texto junto al icono -->
+                  <!-- Buscar -->
+                </button>
+              </form>
+            </div>
+          </body>
+        </html>
+
+        <!--Contido-->
         <div id="bloque">
           <div class="borde-fito">
             <div class="titulo-fito" id="fito1">

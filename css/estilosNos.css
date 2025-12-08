@@ -29,6 +29,51 @@
   text-align: center;
 }
 
+.search-container {
+  display: flex; /* Para alinear input y botón */
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  overflow: hidden;
+  width: 300px;
+  margin: 20px auto; /* Centrarlo */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+#search-input {
+  flex-grow: 1; /* Ocupa el espacio restante */
+  border: none;
+  padding: 10px 15px;
+  outline: none;
+  font-size: 16px;
+}
+
+.search-button {
+  padding: 10px 15px;
+  border: none;
+  background-color: #007bff;
+  color: white; /* El color del icono será blanco por herencia */
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s;
+  display: flex; /* Añade esto para centrar el icono si es necesario */
+  align-items: center;
+  justify-content: center;
+}
+
+.search-button:hover {
+  background-color: #0056b3;
+}
+
+/* Opcional: Si decides dejar el texto "Buscar" junto al icono, usa esto para espaciarlos */
+.search-button i {
+  /* margin-right: 5px; */ /* Descomenta si usas texto y necesitas espacio */
+}
+
+/* Estilo para el icono (si usas Font Awesome) */
+.fa-search {
+  /* Puedes añadir más estilos aquí */
+}
+
 #bloque {
   padding-top: 30px;
   width: 100%;

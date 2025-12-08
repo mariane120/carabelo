@@ -34,7 +34,7 @@
             empresas, permítennos afrontar gastos e ter maior incidencia social.
             <br /><br />
             Se queres colaborar, rechea o formulario. Poñerémonos en contacto
-            contigo o antes posible.
+            contigo o antes posible. Prazo máximo estimado: unha semana.
           </p>
         </section>
 
@@ -46,7 +46,7 @@
               type="text"
               id="nombre"
               required
-              placeholder="Nome"
+              placeholder="Nome (campo requerido)"
               title="O nome é un campo obrigatorio"
               autofocus
               maxlength="20"
@@ -59,7 +59,7 @@
             <input
               type="tel"
               id="tel"
-              placeholder="Teléfono"
+              placeholder="Teléfono (opcional)"
               pattern="^[0-9]{9}$"
             />
             <!--Indicar ao menos un modo de contacto-->
@@ -71,7 +71,7 @@
               type="email"
               id="email"
               name="user_mail"
-              placeholder="Correo electrónico"
+              placeholder="Correo electrónico (opcional)"
             />
             <!--Indicar ao menos un modo de contacto-->
           </label>
@@ -135,7 +135,7 @@
               type="textarea"
               id="mensaxe"
               required
-              placeholder="Escribe aquí a túa mensaxe"
+              placeholder="Escribe aquí a túa mensaxe (opcional)"
             />
           </label>
 
@@ -145,9 +145,13 @@
             class="boton"
             type="submit"
             id="enviar"
-            style="color: #0177bf"
+            style="color: #e3001b"
           >
             Enviar
+          </button>
+
+          <button class="boton" type="reset" id="reset" style="color: #0177bf">
+            Restablecer
           </button>
         </form>
       </section>

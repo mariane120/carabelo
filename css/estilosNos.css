@@ -40,7 +40,7 @@
 }
 
 #search-input {
-  flex-grow: 1; /* Ocupa el espacio restante */
+  flex-grow: 1; /* Ocupa espacio restante */
   border: none;
   padding: 10px 15px;
   outline: none;
@@ -55,13 +55,13 @@
   cursor: pointer;
   font-size: 16px;
   transition: background-color 0.3s;
-  display: flex; /* Añade esto para centrar el icono si es necesario */
+  display: flex; /* centrar icono */
   align-items: center;
   justify-content: center;
 }
 
 .search-button:hover {
-  background-color: #0056b3;
+  background-color: #0177bf;
 }
 
 /* Opcional: Si decides dejar el texto "Buscar" junto al icono, usa esto para espaciarlos */

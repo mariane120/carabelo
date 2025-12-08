@@ -14,6 +14,10 @@
       href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Just+Me+Again+Down+Here&display=swap"
       rel="stylesheet"
     />
+
+    <!--Icono buscador-->
+    <link rel="stylesheet" href="cdnjs.cloudflare.com" />
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <!--Menú. É idéntico a todas pas páxinas por iso está integrado cun include-->
@@ -52,38 +56,20 @@
         <h2 class="titulo2">Coñece a nosa <em>historia</em></h2>
 
         <!--Buscador-->
-        <!DOCTYPE html>
-        <html lang="es">
-          <head>
-            <meta charset="UTF-8" />
-            <meta
-              name="viewport"
-              content="width=device-width, initial-scale=1.0"
+        <div class="search-container">
+          <form action="/search" method="get">
+            <input
+              type="search"
+              name="q"
+              placeholder="Buscar..."
+              class="search-input"
             />
-            <title>Buscador con Icono</title>
-            <!-- 1. Enlaza Font Awesome (usando la versión gratuita CDN) -->
-            <link rel="stylesheet" href="cdnjs.cloudflare.com" />
-            <link rel="stylesheet" href="style.css" />
-          </head>
-          <body>
-            <div class="search-container">
-              <form action="/search" method="get">
-                <input
-                  type="search"
-                  name="q"
-                  placeholder="Buscar..."
-                  class="search-input"
-                />
-                <button type="submit" class="search-button">
-                  <!-- 2. Añade el icono de lupa (fas fa-search) -->
-                  <i class="fas fa-search"></i>
-                  <!-- Opcional: Texto junto al icono -->
-                  <!-- Buscar -->
-                </button>
-              </form>
-            </div>
-          </body>
-        </html>
+            <button type="submit" class="search-button">
+              <!-- Icono de lupa (fas fa-search) -->
+              <i class="fas fa-search"></i>
+            </button>
+          </form>
+        </div>
 
         <!--Contido-->
         <div id="bloque">
